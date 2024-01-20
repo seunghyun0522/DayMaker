@@ -1,0 +1,512 @@
+.wrap {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.wrap * {
+  box-sizing: border-box;
+}
+
+section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+.login,
+.content-wrap {
+  display: block;
+}
+
+.mo {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.valign {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.three-column {
+  font-size: 0;
+}
+
+.three-column > * {
+  display: inline-block;
+  vertical-align: top;
+
+  font-size: 10rem;
+}
+
+/*back*/
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #fafafa;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.back video {
+  display: block;
+  max-width: 1920px;
+}
+
+/*login*/
+.login {
+  display: table;
+  height: 100vh;
+  z-index: 1;
+}
+
+.login .login-content {
+  position: relative;
+  width: 1000rem;
+  margin: 0 auto;
+  padding: 0 20rem;
+  text-align: center;
+  color: white;
+}
+
+.login .today {
+  font-size: 25rem;
+  font-weight: 500;
+}
+.today {
+  margin-bottom: 20px;
+}
+
+.login .clock {
+  font-size: 120rem;
+}
+
+.login-form h2 {
+  margin: 45rem 0 0;
+  font-size: 35rem;
+  font-weight: 500;
+}
+.login-form .user-name {
+  text-align: center;
+  width: 350rem;
+  margin-top: 20rem;
+  padding: 5rem;
+  font-size: 25rem;
+  text-align: center;
+  border: 0;
+  color: white;
+  border-bottom: solid 2rem white;
+  background-color: transparent;
+}
+
+.greeting {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-size: 80rem;
+  font-weight: 500;
+  opacity: 0;
+}
+
+/*content-wrap*/
+.content-wrap {
+  display: table;
+  height: 100vh;
+  opacity: 0;
+  z-index: 0;
+}
+
+.content-wrap .head {
+  width: 1200rem;
+  margin: 0 auto;
+}
+
+.head {
+  display: flex;
+  padding: 5rem 10rem;
+  align-items: center;
+}
+
+.head .user {
+  margin-right: 5px;
+}
+
+.logout figure {
+  width: 40rem;
+  height: 40rem;
+  padding: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  filter: invert();
+}
+.head .logout button:hover {
+  cursor: pointer;
+}
+.logout {
+  width: 50%;
+}
+
+.weather-wrap {
+  display: flex;
+  justify-content: right;
+  width: 30%;
+}
+.logout button {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.content-wrap .body {
+  width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+  padding: 20rem;
+  border-radius: 20rem;
+  background-color: rgba(164, 189, 251, 0.492);
+}
+
+/*body*/
+.user p {
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+}
+
+.content-column {
+  padding: 20rem;
+}
+
+.content-left {
+  width: 45%;
+}
+
+.weather-wrap p {
+  color: white;
+  font-size: 25px;
+}
+
+.content-left .quotes {
+  border-radius: 25px;
+  transform: rotate(-4deg);
+  text-align: center;
+  word-break: keep-all;
+}
+
+.content-left .quotes p {
+  margin-bottom: 10rem;
+  line-height: 1.38;
+  font-size: 20rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.content-left .quotes span {
+  font-size: 15rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.content-left .randomImg {
+  left: 35%;
+  position: relative;
+  width: 40%;
+  margin-top: 25rem;
+  padding: 10rem 10rem 40rem;
+  transform: rotate(10deg);
+  background: black;
+  z-index: 10;
+}
+.content-left .randomImg::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -2em;
+  left: 50%;
+  transform: rotate(20deg) translateX(-50%);
+  width: 25rem;
+  height: 5em;
+  background-color: rgba(100, 243, 117, 0.7);
+}
+
+.content-center {
+  position: relative;
+  width: calc((100% - 40%) - 80rem);
+}
+
+.content-center .todo-list-wrap {
+  font-size: 18rem;
+  font-weight: bold;
+
+  padding: 20px;
+}
+
+.content-center .todo-list-wrap h3 {
+  font-size: 25rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.content-center .todo-list-wrap .todo-list {
+  height: 550rem;
+  margin-top: 25rem;
+  overflow-y: auto;
+}
+
+.content-center .todo-list-wrap .todo-list li button,
+.content-center .todo-list-wrap .todo-input {
+  border: 0;
+  background-color: transparent;
+}
+.todo-input::placeholder {
+  color: black;
+}
+
+.content-center .todo-list-wrap .todo-list li {
+  position: relative;
+}
+
+.content-center .todo-list-wrap .todo-list li::before {
+  content: "";
+  display: inline-block;
+  font-size: 13rem;
+  position: absolute;
+  top: 0.5em;
+}
+
+.content-center .todo-list-wrap .todo-list li:hover,
+.content-center .todo-list-wrap .todo-list li input,
+.content-center .todo-list-wrap .todo-list li button {
+  cursor: pointer;
+}
+
+.content-center .todo-list-wrap .todo-list li + li {
+  margin-top: 25rem;
+}
+
+.content-center .todo-list-wrap .todo-list li > * {
+  display: inline-block;
+}
+
+.content-center .todo-list-wrap .todo-list li input {
+  margin-top: 6.2rem;
+}
+.content-center .todo-list-wrap .todo-list li p {
+  width: 86%;
+  margin-left: 25rem;
+  line-height: 1.35;
+}
+
+.content-center .todo-list-wrap .todo-list li button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  transform: translateY(-50%);
+}
+
+.content-center .todo-list-wrap .todo-form {
+  margin-top: 20rem;
+}
+
+.content-center .todo-list-wrap .todo-input {
+  width: 100%;
+  padding: 4rem;
+  font-size: 18rem;
+  font-weight: bold;
+  border-bottom: solid 2rem #000;
+}
+
+/*right*/
+.content-right {
+  width: 10%;
+}
+
+.content-right .Shortcut-list > li {
+  width: 50rem;
+  height: 50rem;
+  margin-left: auto;
+  margin-right: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: border-radius 300ms;
+  overflow: hidden;
+}
+.content-right .Shortcut-list > li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.content-right .Shortcut-list > li:hover {
+  border-radius: 19rem;
+  transition: border-radius 300ms;
+}
+
+.content-right .Shortcut-list > li + li {
+  margin-top: 8rem;
+}
+
+.content-right .Shortcut-list li figure {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.content-right .Shortcut-list li figure img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*motion*/
+.fadeOut {
+  transition: opacity 500ms;
+  opacity: 0;
+}
+
+.fadeIn {
+  transition: opacity 700ms;
+  opacity: 1;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  float: none;
+}
+
+/* ======== Calendar ======== */
+.my-calendar {
+  text-align: center;
+  font-weight: 800;
+  cursor: default;
+}
+#sunday {
+  color: red;
+}
+#saturday {
+  color: blue;
+}
+.my-calendar .clicked-date {
+  border-radius: 25px;
+  margin-top: 40px;
+  float: left;
+  width: 35%;
+  padding: 40px 0 40px;
+  background: white;
+}
+.my-calendar .calendar-box {
+  float: right;
+  width: 58%;
+  padding-left: 10px;
+}
+
+.clicked-date .cal-day {
+  font-size: 15px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.clicked-date .cal-date {
+  font-size: 35px;
+}
+
+.ctr-box {
+  padding: 0 16px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.ctr-box .btn-cal {
+  position: relative;
+  float: left;
+  width: 15px;
+  height: 15px;
+
+  font-size: 10px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.ctr-box .btn-cal:after {
+  content: "<";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 25px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.ctr-box .btn-cal.next {
+  float: right;
+}
+.ctr-box .btn-cal.next:after {
+  content: ">";
+}
+
+.cal-table {
+  width: 100%;
+}
+.cal-table th {
+  width: 14.2857%;
+  padding-bottom: 5px;
+  font-size: 10px;
+  font-weight: 900;
+}
+.cal-table td {
+  padding: 3px 0;
+  height: 35px;
+  vertical-align: middle;
+}
+.cal-table td.day {
+  position: relative;
+  cursor: pointer;
+}
+.cal-table td.today {
+  background: #ffd255;
+  border-radius: 70%;
+  color: #fff;
+}
+.cal-table td.day-active {
+  transition: all 0.5s;
+  background: #ff8585;
+  border-radius: 50%;
+  color: #fff;
+}
+.cal-table td.has-event:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: #ffc107;
+}
