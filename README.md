@@ -1,6 +1,10 @@
 # DayMaker
-![12](https://github.com/seunghyun0522/DayMaker/assets/75532258/50df5ace-a6d6-4219-b54d-3bcafefb2738)
 
+## 서비스
+
+https://github.com/seunghyun0522/DayMaker/assets/75532258/06c703b3-caf3-4289-8cd3-8d7862f993e9
+
+[DayMaker](https://seunghyun0522.github.io/DayMaker/)
 
 ## 개발 환경
 
