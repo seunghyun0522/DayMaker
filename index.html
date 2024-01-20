@@ -2,8 +2,133 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Day Maker List</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>DayMaker</title>
   </head>
-  <body></body>
+  <body>
+    <div class="wrap">
+      <div class="back">
+        <video autoplay loop muted></video>
+      </div>
+      <section class="login">
+        <div class="valign">
+          <div class="login-content">
+            <div class="clock-box">
+              <p class="today"></p>
+              <p class="clock">00:00:00</p>
+            </div>
+            <form class="login-form">
+              <h2>Hello, What's your name?</h2>
+              <input class="user-name" required maxlength="15" type="text" />
+            </form>
+            <p class="greeting"></p>
+          </div>
+        </div>
+      </section>
+      <section class="content-wrap">
+        <div class="valign">
+          <div class="content-box">
+            <div class="head">
+              <div class="user">
+                <p class="user"></p>
+              </div>
+              <div class="logout">
+                <button>
+                  <figure>
+                    <img src="./imgs/icon/logout.svg" />
+                  </figure>
+                </button>
+              </div>
+              <div class="weather-wrap">
+                <p>
+                  <span></span>
+                  <span></span>
+                </p>
+              </div>
+            </div>
+            <div class="body">
+              <div class="content">
+                <ul class="three-column">
+                  <li class="content-center content-column">
+                    <div class="todo-list-wrap">
+                      <h3 class="text">To Do List 📝</h3>
+                      <form class="todo-form">
+                        <input
+                          class="todo-input"
+                          type="text"
+                          placeholder="Please make a list!"
+                          required
+                        />
+                      </form>
+                      <ul class="todo-list"></ul>
+                    </div>
+                  </li>
+                  <li class="content-left content-column">
+                    <div class="container">
+                      <div class="my-calendar clearfix">
+                        <div class="clicked-date">
+                          <div class="cal-day"></div>
+                          <div class="cal-date"></div>
+                        </div>
+                        <div class="calendar-box">
+                          <div class="ctr-box clearfix">
+                            <button
+                              type="button"
+                              title="prev"
+                              class="btn-cal prev"
+                            ></button>
+                            <span class="cal-month"></span>
+                            <span class="cal-year"></span>
+                            <button
+                              type="button"
+                              title="next"
+                              class="btn-cal next"
+                            ></button>
+                          </div>
+                          <table class="cal-table">
+                            <thead>
+                              <tr>
+                                <th id="sunday">SUN</th>
+                                <th>MON</th>
+                                <th>TUE</th>
+                                <th>WED</th>
+                                <th>THU</th>
+                                <th>FRI</th>
+                                <th id="saturday">SAT</th>
+                              </tr>
+                            </thead>
+                            <tbody class="cal-body"></tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <!-- // .my-calendar -->
+                    </div>
+                    <div class="quotes">
+                      <p></p>
+                      <span></span>
+                    </div>
+
+                    <div class="randomImg">
+                      <figure></figure>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./script/weather.js"></script>
+    <script src="./script/calender.js"></script>
+    <script src="./script/clock.js"></script>
+    <script src="./script/background.js"></script>
+    <script src="./script/user.js"></script>
+    <script src="./script/todoList.js"></script>
+    <script src="./script/quotes.js"></script>
+  </body>
 </html>
