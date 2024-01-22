@@ -4,7 +4,7 @@
 
 https://github.com/seunghyun0522/DayMaker/assets/75532258/06c703b3-caf3-4289-8cd3-8d7862f993e9
 
-[DayMaker](https://seunghyun0522.github.io/DayMaker/)
+🔗 LINK : [DayMaker](https://seunghyun0522.github.io/DayMaker/)
 
 # 💻 개발 환경
 
